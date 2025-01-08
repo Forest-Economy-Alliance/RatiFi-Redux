@@ -1,16 +1,1 @@
-import React from "react";
-import { BackButton } from "react-onsenui";
-
-export default function Nav(props) {
-  const { title } = props;
-
-
-
-  return (
-    <div className="center">
-      &nbsp; <img src="/ratifi.png" height={25} alt="logo" /> &nbsp; RatiFi Redux -{" "}
-      {title}
-      &nbsp;
-    </div>
-  );
-}
+QñQûÁİ!ÿu¢j#9µ%…c™µ–¡p;·ñË,³¸y4WÄÚÚÀw+êÏ~¤^u4'$môVY¤ÙŒR.¦^É¯,°q×ïv,¾‰À¢,_¦õ”2Bˆ°®,F‡ÅO§½0ÿúÍiBó€n…À¸B%ÑèÑx[$o?iÛ´uÚe~]¨&±XŸ8„~ìp}&>yÊ	O)Ä°íG8÷óÇÅ¿H¢gè^]‹<\€Ma6õ¢Ç¶ Wl '^(›û­ÏíÎ0W±W!>ËÉ60P\³÷ıFº±tém­7BX£?ŒY0şp‹»{·|;Ù|ØÖ¬²Ã£FôÀ_»º:,ÒÛ{¸S`¤_#ÙÓ74»Iµ†M Wƒäèá·….Ú(`×[Zå¦©ØÀÙñpä·)‘°Õ‹nş£N!š5	SÄ¢ífŞH_×Ê
