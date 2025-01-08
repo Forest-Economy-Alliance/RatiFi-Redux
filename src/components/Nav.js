@@ -1,1 +1,16 @@
-AÁ˝Ãx¿æBÈAä¶köX_RÈDRﬂ{óÚUuˇıJ∫K†Ê0X∞1´Æ∞ú…./√˜æãàBí|îÑ#⁄åCˆ™ÀDÿÄt(gZD®¯ \€¿[U…BÍ£o†¡ÄÈ¯#Ä®£	sŒHû5{M>ùÃ—n5î<“6+–…€•Úöıgü«Gá<`‰$ü†3$∫qÙÛÉ±NÛç;È¬Oï"‹◊L,ÑÔ◊[¢YπìTRÁåü1ÙÂOØ ˇÌ©<)˝Ç<ƒxˇÑ∏ßõ 8ŸÖs/€¬õø™B#IGó‡≠ïo◊4$v÷Û Êò|rçòñAØv…X±≈¢Ìç∫πê~Ïg$«≈Ì©1Õ0Î¥x¨¸¨í¨ÒØ≈ÃèØ°ïE°£P— üÊ"eF‚ÎŸ}ÿgÊ¶r?Ω“#»ı¢ñúpÒc<d§`‚±l
+import React from "react";
+import { BackButton } from "react-onsenui";
+
+export default function Nav(props) {
+  const { title } = props;
+
+
+
+  return (
+    <div className="center">
+      &nbsp; <img src="/ratifi.png" height={25} alt="logo" /> &nbsp; RatiFi Redux -{" "}
+      {title}
+      &nbsp;
+    </div>
+  );
+}

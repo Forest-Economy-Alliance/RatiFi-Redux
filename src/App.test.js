@@ -1,1 +1,8 @@
-²»Şé[á“®@¢_Õ&q$pMíÊñ}út³ÈzûAÖşO[zÑ(©k”<k=P£×ğò(¸öEÑ££Í¦¦>ùÀçà"Ø<´=·dŒó8	³O–k¼Y7m>RŒCO*ö©Y×¤ì	\y2a…‹ƒÏô¼¾²“l}îÑ2¬ûñ»vö¯‡Áççü>n¿ıÉ’6Z³úŸœ™Ò­‹2ã,G^Š²Æ‚2êÌO-ZŸ'Ô–M¦ãbVÿ×ØR¦TìZ¡êÑáßñ†yiBµİ´7Ÿ_¼ñÌgïÌ£#U×]>€åjS|	daĞ„x	@ßZæ±¹4hÃoÌğa˜äœÄ%È:ˆ|´ÌY
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});

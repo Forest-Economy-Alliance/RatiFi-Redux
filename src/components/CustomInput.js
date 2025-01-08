@@ -1,2 +1,33 @@
-tö&ï/Íè‚Œ‘†Õê·órBï¸Ü M­»2œH+*-Òí³õ¿¤,T/ĞŞz,1FR]/sT^ÆÂL2ØSq¸ñ	n¼:²DØ•caHZMÇ@ºšú”`¼>d§—:7ú‚âõjePdãz>z°H•ãöÅN¢Ç0eD ÊdzÀ+Äü„Ö‡c´Fƒ1A¹’.ûŞŠÑkÙítbP_Æ‰0Oa“ŒŠ>š0ÇuÉ{o¦Å>›€·‡úÌOSÂìùTX±“3X$U9Zı»Ó…at^¡z=½÷]\ıºÒÕi(çQqã)¾4c†@s9(N4¼OaÇ˜–0?Xú¬IuğVõî†Yåş—-ëC4nv³¾ÏÁ•g²Kÿ/—²êá«ò8vÅú
-ğ¿S±ãô¶Ä¸şˆX*Wë°%öä*a	y·ÌÉÇàŞT—ÙÂ‰a=Àıß*ƒğV:/à‡×˜Û~ÔkRÊĞ‹qéëG[ßò~¼‡ÿ/Š¬“npûğ4Ùô¤‰$ƒ=ã¢ÚãÌ`WŠ 'şÇx/bmÊ0qª<‹m#MÕDŞr…Ø2wzF7ò Ø Rğs##n/¶ñ²ÑUGò"ºó2+ÀiäüË†qË<ú]@ù4|T2Ë§È˜7‘n‹¤od^eòŒÏ:ÃÖ"ÁjpáBfL“`—¼|Fí“KOÊ¤ÿØ*ÕHn›uIğÒ„¡+FÄBÑ¼ã…ß³COOş—lhŞ’% R¼Ol@U.ú ı×«hY‡˜)‡£V4çp! 	TYL<ğÒİ·¬Ó)Q„ï¢P…Ä¢¼q6ÅßĞÇŞh¤«PgÇÛŞÎ¥[Ã:øÉªR¼LÂ=åï<µBødóÜ™q±U)´gf+>ş› ­ uãØEâ—©16Z`QT6–fb¢+,‰Pm#|¡ÆòÆXøêmüÈn»ÊåP9OˆÈôT5AÊ6ºWÇñZKø]¨`Éƒà¾9ãf››.OŠ<»(göÖ6ö
+import React from "react";
+import { Button, Input } from "react-onsenui";
+import LoginScreen from "./LoginScreen";
+
+const CustomInput = ({ navigator, setIsLoggedIn ,placeholder,label,type,onCha}) => {
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigator.pushPage({
+      title: "Login",
+      component: LoginScreen,
+    }); 
+  };
+
+  return (
+    <div>
+      <div style={{ marginBottom: 5 }}>{label}</div>
+      <Input
+        type={type}
+        modifier="transparent"
+        placeholder={placeholder}
+        style={{
+          marginBottom: 20,
+          width: "100%",
+          border: "solid 1px gray",
+          borderRadius: 5,
+          padding: "5px 10px",
+        }}
+      />
+    </div>
+  );
+};
+
+export default CustomInput;
