@@ -1,13 +1,2 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
-
-export default reportWebVitals;
+tÇc×‡´ÃŸDÏ”cÃóñvÖî‚6¥<àBË>xÁf]1ªfä?ù¢JŞª¦÷m‘Å™&‡GdÂÄAâ‹®lq0jdK/F=ã> â¯Õé‹-‰ë¼eŠ¼"kŠ¯©n*š_Ÿ´ıÅ~ˆ³Ù!+ èÀÌøÎÍ°õïNşÁoY£.¹„š–ê–<O^Àáå¼RÃô=AïPW?…¶MLùU«÷ÓÌ(ÛíÔlX¡Fc6£Œú…!ó¦ÉDP±ESxüëU{)ş·ßÁ=œ/VøwÊ‘¼oìÜæÛl•u
+†7Î"\ã¡$à=¡[&mªÒu|“Vqñ§N\¤4öØÔ›‰ä?uŠ.Ö‰=f¡©õ¿Âñ]Î¢ü?±}øó+úND‡`6X†Y¥TmU¹¯Y1æÒ¥tx{Wuû¢€ã3ùÚ$ìÒ2Ç`@–¤-×-»=ÅÃ$—´„ùÀ€c0Í$³ÿ;xÏÉ€ÅM‰ŒùÔ›@åz‹Â

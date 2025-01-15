@@ -1,8 +1,2 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+Œ÷{Þ<[ñèÀ•¦³ª%Üµ!}æ¹‘ÙT„5N‹Ì„uF_^ù¥a:ÞÒG¸_ìJ‚FTï¥K:ö[H¥ó(©fë·a„Œ/7ëÐYç9`§Ê„~<à
+“|¯ßç£æzÄ¨kÏmÿÁþÒ:¬”çª$‰L¢R¼¢ŠBÈ§áï´Î¡-‚ƒip"E¾È,ãÌ¡à³ï'W?€ûZ_z|Ë-Ô1ÉUrÔïÂ]R%óÊC0ED\¨uBqRLµ®0w<›ÔºaG4XÌL¤Õõ5–‡^¯i¿9EçzO;©s:TJÉ€¿¬ð÷…_³Žÿ&æL(›ÒÍ3R,ãøÚÉøo/ìî»Ãô¦ÔI“
