@@ -1,26 +1,38 @@
 {
-  "short_name": "RatiFi Redux",
+  "short_name": "RatiFi",
   "name": "RatiFi Redux",
-  "orientation":"portrait-primary",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icons/ratifi-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "ratifi-2.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/icons/ratifi-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "ratifi-2.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/icons/ratifi-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ratifi-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ratifi-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "description":"Simple Secure & Digital"
+  "theme_color": "#ffffff",
+  "description": "Simple, Secure & Digital",
+  "id": "/"
 }
