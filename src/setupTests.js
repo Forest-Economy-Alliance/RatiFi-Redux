@@ -1,1 +1,5 @@
-AÕ VÈÃÌfµŒ™¤÷øîz…^åØ6¿Ê¶~m¼~È@àÒ’^nÌOã_ª+Š}º™[¾Æ®†Pœ‹G'íw}4®‡¯}ù´•	jCßVìàÚ )tn¬ØÿBÀJ‚vıI7Itkíº;›)’æºV,|gÖt³MEÉ~lX|¡|Eí© X˜qr[@½2x’”é·ÖÄW}œ±¾¬6ºøöÂ<>Î¨¼²İ?6wˆŸ9]/÷Ç+ıĞ«—¹ªOx¦	¾äx~ö’ĞJµ‹Ú¼µ»:É2¾š]‡ÓD®”êxîÖß©yĞ–ké½ßÉwjzp~Ë-z€µYÙÒAFÑR·Y“‚ã
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom';
