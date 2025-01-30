@@ -1,4 +1,4 @@
-const CACHE_VERSION = `app-static-${new Date().toISOString()}`; 
+const CACHE_VERSION = `app-static-1.4.11`; 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_VERSION).then((cache) => {
