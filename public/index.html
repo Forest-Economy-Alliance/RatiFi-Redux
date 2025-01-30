@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
     <meta name="title" content="RatiFi Redux - Fast & Secure Claims Management">
-    <meta name="description" content="RatiFi Redux: A fast, secure, offline-first app designed for digital claims management with robust processing.">
-    <meta name="keywords" content="RatiFi Redux, claims management, offline app, digital transformation, secure processing, PWA">
+    <meta name="description"
+        content="RatiFi Redux: A fast, secure, offline-first app designed for digital claims management with robust processing.">
+    <meta name="keywords"
+        content="RatiFi Redux, claims management, offline app, digital transformation, secure processing, PWA">
     <meta name="author" content="RatiFi Team">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="RatiFi Redux - Fast & Secure Claims Management">
-    <meta property="og:description" content="Manage claims efficiently with RatiFi Redux, a lightweight, secure, and offline-first app.">
+    <meta property="og:description"
+        content="Manage claims efficiently with RatiFi Redux, a lightweight, secure, and offline-first app.">
     <meta property="og:image" content="/ratifi-2.png">
     <meta property="og:url" content="https://www.iofe.in">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="RatiFi Redux - Fast & Secure Claims Management">
-    <meta name="twitter:description" content="RatiFi Redux is a lightweight app designed for secure claims management and offline processing.">
+    <meta name="twitter:description"
+        content="RatiFi Redux is a lightweight app designed for secure claims management and offline processing.">
     <meta name="twitter:image" content="/ratifi-2.png">
     <meta name="twitter:site" content="@RatiFiOfficial">
     <link rel="icon" href="/favicon.ico">
@@ -30,6 +34,38 @@
 <body>
     <noscript>Please enable JavaScript in your browser for better performance.</noscript>
     <div id="root"></div>
+    <script>
+        // store the version in session
+        // if not there then re-register the worker
+        // add logic - to store the version
+        // if its less than the session then update re-activate
+        // also add logic in html page hardcode it
+        const version = '1.4.10';
+        const build_id = 10;
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/custom-sw.js').then(registration => {
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            console.log("New version found. Refreshing...");
+                            location.reload();
+                        }
+                    });
+                });
+            });
+
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                console.log("Service worker updated. Reloading page...");
+                location.reload();
+            });
+        }
+    </script>
+
+
     <script>
         window.addEventListener("orientationchange", function () {
             if (window.orientation === 90 || window.orientation === -90) {
